@@ -9,5 +9,5 @@ This Google Chrome extension is designed to check if the website (including Face
 
 1. Click the green <>Code button and select "Download Zip". Extract the repository after it has been downloaded.
 2. In Google Chrome, navigate to chrome://extensions/
-3. Inside Fake_Clinic_Extension-main, drag the Fake_Clinic_Extension folder into the Extensions menu.
+3. Inside the Fake_Clinic_Extension-main folder, drag the Fake_Clinic_Extension folder into the Extensions menu, or in the Chrome Extensions menu, click "Load Unpacked" and select the Fake_Clinic_Extension-main/Fake_Clinic_Extension folder.
 4. You're done! To test, navigate to the following link and verify that an alert message appears: [https://www.acsavalife.com/](https://www.acsavalife.com/)
