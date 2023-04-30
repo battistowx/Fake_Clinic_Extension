@@ -36,7 +36,9 @@ chrome.webNavigation.onCompleted.addListener((details) => {
     // console.log(url);
 
     // Check URLs for a match
-    if (urls.includes(url)) {
+    if (url == "https://www.facebook.com/") {
+      console.log("Home Facebook URL excluded");
+    } else if (urls.includes(url)) {
       console.log("URL found");
       chrome.tabs.query({active: true, currentWindow: true}, tabs => {
         chrome.tabs.sendMessage(tabs[0].id, {action: "showAlert", message: 'WARNING: The website you are currently on has been reported as a "fake clinic", or a Crisis Pregnancy Center.'});
